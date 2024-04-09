@@ -1,0 +1,104 @@
+<html lang="en">
+    <head>
+        <title> accessible programming </title>
+        <link id="theme-style" rel="stylesheet" type="text/css" href="CSS/light.css">
+        <script src="Scripts/script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="#main-content">Skip to main content</a>
+            <a href="#navigation">Skip to navigation</a>
+        </div>
+        
+        <div class="header"> 
+            <!-- Header section -->
+            <h1>about Me</h1>
+            
+        
+
+            <!-- Navigation menu -->
+            <ul class="nav">
+                <li><button onclick="window.location.href='index.html'">Home</button></li>
+                <li><button onclick="window.location.href='form.html'">Form</button></li>
+                <li><button onclick="window.location.href='contact.html'">Contact</button></li>
+            </ul>
+            
+
+            <label for="theme-select"></label>
+            <select class="theme-select" onchange="changeTheme()">
+                <option value="default">Theme Select</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="protanopia">Protanopia</option>
+                <option value="deuteranopia">Deuteranopia</option>
+                <option value="tritanopia">Tritanopia</option>
+            </select>
+            
+            <!-- Settings button 
+            <button>
+                <img src="img/icons8-settings-50.png" alt="settings">
+            </button>-->
+        </div>
+        <div class="HomeContent">
+        <h2>Filler</h2>
+
+        <table>
+            <tr>
+                <th>Title 1</th>
+                <th>Title 2</th>
+                <th>Title 3</th>
+            </tr>
+            <tr>
+                <td>
+                    Ensuring web accessibility involves creating digital content that can be easily navigated and understood by people with disabilities. 
+                    This encompasses various aspects such as providing alternative text for images, ensuring proper heading structure for screen readers, 
+                    and implementing keyboard navigation for users who cannot use a mouse. Accessibility standards like the Web Content Accessibility Guidelines 
+                    (WCAG) provide a framework for developers to follow, promoting inclusivity and equal access to information on the web.
+                </td>
+                <td>
+                    Color contrast plays a crucial role in web accessibility, as it affects the readability of text and elements for 
+                    users with visual impairments. Following WCAG guidelines, developers need to ensure an adequate level of contrast 
+                    between text and background colors to make content accessible to all users. Tools like color contrast checkers help 
+                    designers and developers verify if their color combinations meet the required contrast ratios, thereby improving the 
+                    overall accessibility of the website.
+                </td>
+                <td>
+                    Semantic HTML markup is fundamental for creating accessible web content. Using appropriate HTML elements 
+                    like nav, header, main, footer, and article helps screen readers and other assistive technologies understand the 
+                    structure and purpose of the content. Additionally, labeling form fields with descriptive label elements and 
+                    providing helpful error messages enhances accessibility for users navigating the website with screen readers or 
+                    keyboard-only interfaces. Embracing semantic HTML not only improves accessibility but also enhances search engine 
+                    optimization (SEO) and overall code maintainability.
+                </td>
+            </tr>
+            
+        </table>
+        <div>
+            <button class="carousel-button prev"> &#8656; </button>
+            <button class="carousel-button next"> &#8658; </button>        
+        <ul>
+            <li class="slide">
+                <img src="img/human.jpg" alt="human">
+            </li>
+            <li class="slide">
+                <img src="img/elf.jpg" alt="elf">
+            </li>
+            <li class="slide">
+                <img src="img/dwarf.jpg" alt="dwarf">
+            </li>
+        </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<html lang="en">
+    <head>
+        <title> contact us </title>
+        <link id="theme-style" rel="stylesheet" type="text/css" href="CSS/light.css">
+        <script src="Scripts/script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- FILEPATH -->
+<!-- This line of code makes it viewable on a mobile device -->
+<!-- include skip buttons-->
+<!--TODO add image carousel-->
+<!--TODO add topbar breadcrumb navigation-->
+<!--TODO add -->
+
+    </head>
+    <body class="FormBody">
+        <h1>Input Form</h1>
+        <!--TODO this can be changed to a top navbar in future-->
+        <ul class="nav">
+            <li><button onclick="window.location.href='index.html'">Home</button></li>
+            <li><button onclick="window.location.href='form.html'">Form</button></li>
+            <li><button onclick="window.location.href='contact.html'">Contact</button></li>
+        </ul>
+        <br>
+        <br>
+        <form action="#" method="POST" novalidate onsubmit="return validateForm()">
+            <fieldset>
+                <legend>Personal Details</legend>
+                
+                <div class="input-row">
+                    <div class="input-field">
+                    <label for="First and last name">First and last Name:</label>
+                    </div>
+                    <div` id="fieldBoxes" class="input-field">
+                    <input type="text" name="forename" class="Name" required><br>
+                    <input type="text" name="surname" class="Name" required><br>
+                    </div>
+                </div>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" class="Number"><br>
+
+                <label for="email">Email Address:</label>
+                <input id = "email" type="email" name="email" class="mixed" required><br>
+
+                
+            </fieldset>
+            <fieldset>
+                <legend>Address</legend>
+                <div class="input-row">
+                    <div class="input-field">
+                    <label for="streetnumber">Street Number and Name:</label>
+                    <!--<label for="streetname">Street Name:</label>-->
+                    
+                    </div>
+                    <div` id="fieldBoxes" class="input-field">
+                    <input type="text" name="streetnumber" class="Number">
+                    <input type="text" name="streetname" class="Name">
+                    
+                    </div>
+                </div>
+                
+                <label for="postcode">Postcode:</label>
+                <input type="text" name="postcode" class="mixed" id="postcode" ><br>
+
+                <label for="town">Town/City:</label>
+                <input type="text" name="town" class="Name"><br>
+
+                <label for="country">Country:</label>
+                <input type="text" name="country" class="Name"><br>
+            </fieldset>
+            
+                <input type="button" value="Submit" onclick="validateForm()">
+            
+        </form>
+    </body>
+</html>
+            

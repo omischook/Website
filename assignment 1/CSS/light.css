@@ -1,0 +1,118 @@
+
+/* Set box-sizing to border-box for all elements */
+* {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 10px;
+  font-family: "Times New Roman", Times, sans-serif, serif;
+  margin: 0; /* Add margin to the body */
+}
+
+/* Style for the header */
+.header {
+  font-size: 30px;
+  padding: 60px 10%;/*This line sets the padding of an element. The value 60px represents the top and bottom padding, while 10% represents the left and right padding. Adjust these values as needed.*/
+  display: flex;/*This line sets the display property to flex. This allows the header to be displayed as a flex container.*/
+  align-items: center;/*This line sets the align-items property to center. This centers the content vertically within the header.*/
+  justify-content: space-between;/*This line sets the justify-content property to space-between. This evenly distributes the content within the header, with extra space between the elements.*/
+}
+
+
+h1 {
+  margin: 0;
+  
+}
+
+#skip a {
+  display: block;
+  position: absolute;
+  left: -999px;
+  top: -999px;
+  }
+
+#skip a:focus {
+  left: 0;
+  top: 0;
+  padding: 3px;
+  background: #ffc;
+  border:1px solid #990000;
+  }
+
+.nav li button {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 120px; /* Set a fixed width for all buttons */
+}
+
+
+/* Add more margin and padding to input elements */
+input {
+  margin: 30px; /* Increase margin */
+  padding: 15px; /* Increase padding */
+  height: 23px;
+  background-color: rgb(155, 153, 153);
+  border: 1px solid gray;
+  font-size: 14px; /* Add 'px' to font size value */
+}
+
+#fieldBoxes {
+  display: inline-flex;
+  margin-left: -20;
+  background-color: transparent;
+}
+
+.input-field {
+  display: block;
+}
+
+/*.input-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px; 
+}
+
+/* Increase margin and padding for the textarea */
+textarea {
+  margin: 30px; /* Increase margin */
+  padding: 15px; /* Increase padding */
+  height: 100px;
+  background-color: rgb(155, 153, 153);
+  border: 1px solid gray;
+  font-size: 14px; /* Add 'px' to font size value */
+}
+
+
+input[type="button"]{
+  margin: 30px auto; /* Increase margin and set auto for left and right margins */
+  /* Add the following properties to center the input element horizontally */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* color for button from https://www.datylon.com/blog/data-visualization-for-colorblind-readers#:~:text=The%20picture%20below%20shows%20that,avoid%20for%20the%20color%20blind. */
+  background-color: #1f449c;
+  width: 50%;  
+  color: white;
+  border: none;
+  font-size: 14px; /* Add 'px' to font size value */
+  cursor: pointer;
+}
+
+/* Fix: Replace 'onhover' with 'hover' */
+:hover {
+  color: grey;
+  border: 1px solid grey;
+}
+
+.ThemeSwitch {
+  height: 50px;
+  width: 50px;
+
+
+
+}

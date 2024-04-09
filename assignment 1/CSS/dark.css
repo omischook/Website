@@ -1,0 +1,189 @@
+/* Set box-sizing to border-box for all elements */
+* {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 10px;
+  font-family: "Times New Roman", Times, sans-serif, serif;
+  margin: 0; /* Add margin to the body */
+}
+
+/* Body styles */
+body {
+  background-color: #333; /* Change body background color to match header */
+  color: #fff; /* Change body font color to white */
+}
+
+#skip a {
+  display: block;
+  position: absolute;
+  left: -999px;
+  top: -999px;
+  }
+
+#skip a:focus {
+  left: 0;
+  top: 0;
+  padding: 3px;
+  background: #ffc;
+  border:1px solid #990000;
+  }
+
+
+.nav li button {
+  padding: 10px 20px;
+  background-color: #222; /* Change background color to a darker shade */
+  color: white; /* White text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 120px; /* Set a fixed width for all buttons */
+}
+/* Style for the header */
+.header {
+  font-size: 30px;
+  padding: 60px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff; /* Change font color to white */
+  background-color: #333; /* Change background color to match body */
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Add more margin and padding to input elements */
+input {
+  margin: 30px;
+  padding: 15px;
+  height: 23px;
+  background-color: #222; /* Change background color to a darker shade */
+  border: 1px solid gray;
+  font-size: 14px;
+  color: #fff; /* Change font color to white */
+}
+
+/* Style for select element */
+select {
+  margin: 30px;
+  padding: 15px;
+  background-color: #222; /* Change background color to match input elements */
+  border: 1px solid gray;
+  font-size: 14px;
+  color: #fff; /* Change font color to white */
+}
+
+#fieldBoxes {
+  display: inline-flex;
+  margin-left: -20px; /* Add missing 'px' unit */
+  background-color: transparent;
+}
+
+.input-field {
+  display: block;
+}
+
+/* Increase margin and padding for the textarea */
+textarea {
+  margin: 30px;
+  padding: 15px;
+  height: 100px;
+  background-color: #222; /* Change background color to a darker shade */
+  border: 1px solid gray;
+  font-size: 14px;
+  color: #fff; /* Change font color to white */
+}
+
+input[type="button"] {
+  margin: 30px auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #1f449c; /* Keep the background color */
+  width: 50%;
+  color: #fff; /* Change font color to white */
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Fix: Replace 'onhover' with 'hover' */
+:hover {
+  color: #ccc; /* Change font color to light gray */
+  border: 1px solid #ccc; /* Change border color to light gray */
+}
+
+.ThemeSwitch {
+  height: 50px;
+  width: 50px;
+}
+
+/* Image carousel code goes here ------------------------------------------------------------------------------------------------*/
+
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.carousel > ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel button{
+  position: absolute;
+  background: none;
+  border: none;
+  front-size: 4rem;
+  top: 50%;
+  transform: translate(-50%);
+  color: rgba(255, 255, 255, .5);
+  cursor: pointer;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: rgba(255, 255, 255, .75);
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
+}

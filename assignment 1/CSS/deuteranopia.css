@@ -1,0 +1,121 @@
+/* Set box-sizing to border-box for all elements */
+* {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 10px;
+  font-family: "Times New Roman", Times, sans-serif, serif;
+  margin: 0; /* Add margin to the body */
+}
+
+/* Body styles */
+body {
+  background-color: #292a2d; /* Dark blueish-gray background */
+  color: #fff; /* White font color */
+}
+
+/* Style for the header */
+.header {
+  font-size: 30px;
+  padding: 60px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff; /* White font color */
+  background-color: #292a2d; /* Dark blueish-gray background */
+}
+
+#skip a {
+  display: block;
+  position: absolute;
+  left: -999px;
+  top: -999px;
+  }
+
+#skip a:focus {
+  left: 0;
+  top: 0;
+  padding: 3px;
+  background: #ffc;
+  border:1px solid #990000;
+  }
+
+.nav li button {
+  padding: 10px 20px;
+  background-color: #222; /* Change background color to a darker shade */
+  color: white; /* White text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 120px; /* Set a fixed width for all buttons */
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Add more margin and padding to input elements */
+input {
+  margin: 30px;
+  padding: 15px;
+  height: 23px;
+  background-color: #1f2023; /* Darker blueish-gray background */
+  border: 1px solid #666; /* Medium gray border */
+  font-size: 14px;
+  color: #fff; /* White font color */
+}
+
+/* Style for select element */
+select {
+  margin: 30px;
+  padding: 15px;
+  background-color: #1f2023; /* Darker blueish-gray background */
+  border: 1px solid #666; /* Medium gray border */
+  font-size: 14px;
+  color: #fff; /* White font color */
+}
+
+#fieldBoxes {
+  display: inline-flex;
+  margin-left: -20px; /* Add missing 'px' unit */
+  background-color: transparent;
+}
+
+.input-field {
+  display: block;
+}
+
+/* Increase margin and padding for the textarea */
+textarea {
+  margin: 30px;
+  padding: 15px;
+  height: 100px;
+  background-color: #1f2023; /* Darker blueish-gray background */
+  border: 1px solid #666; /* Medium gray border */
+  font-size: 14px;
+  color: #fff; /* White font color */
+}
+
+input[type="button"] {
+  margin: 30px auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #4d80e4; /* Dark blue submit button */
+  width: 50%;
+  color: #fff; /* White font color */
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Fix: Replace 'onhover' with 'hover' */
+:hover {
+  color: #ccc; /* Light gray font color */
+  border: 1px solid #ccc; /* Light gray border */
+}
+
+.ThemeSwitch {
+  height: 50px;
+  width: 50px;
+}
